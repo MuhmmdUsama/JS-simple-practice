@@ -4,14 +4,12 @@ let i = 0;
 //src="./image/1.jpg"
 
 function slide() {
-    console.log('log')
-    img.setAttribute('src', images[i]);
-    i++
-    if(i== images.length){
-        i=0
-    }
-  
-
+  console.log('log');
+  img.setAttribute('src', images[i]);
+  i++;
+  if (i == images.length) {
+    i = 0;
+  }
   setTimeout(function () {
     slide();
   }, 1000);
